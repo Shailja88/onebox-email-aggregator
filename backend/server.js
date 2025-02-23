@@ -9,7 +9,7 @@ const app = express();
 
 // 🔥 CORS Middleware yaha lagao
 app.use(cors({
-    origin: 'http://localhost:3000'  // React frontend ka origin
+    origin: '*'  // React frontend ka origin
 }));
 
 app.use(express.json());
