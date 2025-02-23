@@ -14,6 +14,9 @@ app.use(cors({
 
 app.use(express.json());
 app.use('/api/emails', emailRoutes);
+app.get("/", (req, res) => {
+  res.send("Welcome to OneBox Email Aggregator API!");
+});
 
 // Start IMAP Email Sync
 fetchEmails();
