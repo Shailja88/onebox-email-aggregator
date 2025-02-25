@@ -3,8 +3,16 @@ const { indexEmail } = require('../services/elasticsearch');
 const { sendSlackNotification, sendWebhookNotification } = require('../services/notifications');
 
 const getEmails = async (req, res) => {
-    const emails = await Email.find({});
-    res.json(emails);
+    try {
+        const emails = await Email.find({});
+        
+        console.log("📩 Emails from DB:", emails);  // ✅ Debugging
+
+        res.json(emails);
+    } catch (error) {
+        console.error("❌ Error fetching emails:", error);
+        res.status(500).json({ error: "Internal Server Error" });
+    }
 };
 
 const markInterested = async (req, res) => {

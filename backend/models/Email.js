@@ -5,7 +5,7 @@ const EmailSchema = new mongoose.Schema({
     recipient: String,
     subject: String,
     body: String,
-    receivedAt: Date,
+    receivedAt: { type: Date, default: Date.now },  // ✅ Default timestamp added
     category: {
         type: String,
         enum: ["Interested", "Meeting Booked", "Not Interested", "Out of Office", "Spam", "Not Categorized"],
