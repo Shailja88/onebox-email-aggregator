@@ -1,0 +1,105 @@
+/* 🔐 Login Container - Centered */
+.loginContainer {
+  max-width: 380px;  /* Slightly smaller for better fit */
+  margin: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 201, 255, 0.4);
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  animation: glowBorder 2s infinite alternate;
+
+  /* 🚀 Absolute center positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* 🌟 Glowing Border Animation */
+@keyframes glowBorder {
+  from {
+    box-shadow: 0 0 10px rgba(0, 201, 255, 0.4);
+  }
+  to {
+    box-shadow: 0 0 20px rgba(0, 201, 255, 0.8);
+  }
+}
+
+/* 📝 Input Fields - Glassy Effect */
+.inputField {
+  margin: 12px 0;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.inputField label {
+  color: rgba(32, 4, 4, 0.8) !important;
+}
+
+.inputField input {
+  color: #3f0505;
+}
+
+/* 🌠 Neon Input Focus */
+.inputField .MuiOutlinedInput-root {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.inputField .MuiOutlinedInput-root:hover,
+.inputField .MuiOutlinedInput-root.Mui-focused {
+  border-color: #00c9ff;
+  box-shadow: 0 0 15px rgba(0, 201, 255, 0.7);
+}
+
+/* 🔘 Futuristic Login Button */
+.button {
+  background: linear-gradient(90deg, #00c9ff, #92fe9d);
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+/* 🚀 Hover & Animation */
+.button:hover {
+  background: linear-gradient(90deg, #92fe9d, #00c9ff);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 201, 255, 1);
+}
+
+/* 🌌 Background - Smaller Grid */
+body {
+  background: url("https://www.transparenttextures.com/patterns/squares.png"),
+              radial-gradient(circle at center, #1b2735, #6d7ed2);
+  background-size: 8% auto;  /* Smaller grid */
+}
+
+@media (max-width: 1200px) {
+  body {
+    background-size: 10% auto;
+  }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 600px) {
+  .loginContainer {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .button {
+    padding: 10px 20px;
+  }
+
+  body {
+    background-size: 12% auto;  /* Mobile screens pe aur optimize */
+  }
+}
