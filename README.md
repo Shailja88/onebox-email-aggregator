@@ -85,8 +85,10 @@ If you'd like to contribute, fork the repository and submit a pull request. Ensu
 
 ## License
 <img width="1470" alt="Screenshot 2025-02-26 at 10 33 05 PM" src="https://github.com/user-attachments/assets/f15933e9-a054-4b27-83dd-d23a711a127c" />
-<img width="1444" alt="Screenshot 2025-02-26 at 10 33 34 PM" src="https://github.com/user-attachments/assets/3e8491c2-092e-40d5-b367-07058a3e70de" /><img width="842" alt="Screenshot 2025-02-26 at 10 33 47 PM" src="https://github.com/user-attach<img width="1405" alt="Screenshot 2025-02-26 at 10 34 08 PM" src="https://github.com/user-attachments/assets/75ff282a-8cc4-45b3-a2ab-905537e0bbf9" />
-ments/assets/3b193908-90fe-463c-8736-57c2d09afec5" />
+<img width="1444" alt="Screenshot 2025-02-26 at 10 33 34 PM" src="https://github.com/user-attachments/assets/3e8491c2-092e-40d5-b367-07058a3e70de" />
+<img width="1405" alt="Screenshot 2025-02-26 at 10 34 08 PM" src="https://github.com/user-attachments/assets/30bacf80-6f25-47fc-bd6d-e180c506edf7" />
+running app loom link 
+https://www.loom.com/share/82b496c19ce94919a7ca8e3b214c2dee?sid=56d9a541-ce0c-4eed-8859-1aa3a008d42a
 
 
 This project is licensed under the MIT License.
