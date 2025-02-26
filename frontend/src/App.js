@@ -5,7 +5,7 @@ import Login from "./auth/Login";
 import formatEmailBody from "./utils/formatEmailBody";
 import "./App.css";
 
-const BASE_URL = "http://localhost:5001";
+const BASE_URL = "https://onebox-email-aggregator-1.onrender.com";
 
 const App = () => {
     const [emails, setEmails] = useState([]);
