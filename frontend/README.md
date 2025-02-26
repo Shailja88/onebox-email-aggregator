@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# OneBox Email Aggregator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+OneBox Email Aggregator is an email management system that fetches, categorizes, and organizes emails from multiple accounts in a unified platform. It utilizes rule-based categorization and IMAP integration to streamline email handling.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Email Aggregation**: Fetch emails from multiple email providers using IMAP integration.
+- **Rule-Based Categorization**: Uses predefined rules to classify emails into relevant categories.
+- **Secure Authentication**: Uses JWT-based authentication for secure login and access control.
+- **Email Storage**: Stores fetched emails securely in MongoDB.
+- **Protected Routes**: Middleware implemented to secure API endpoints.
+- **Error Handling**: Centralized error handling to manage API responses efficiently.
+- **Frontend Integration**: User-friendly interface to view, search, and filter emails.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Ensure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v16 or later)
+- MongoDB
+- IMAP-supported email accounts
 
-### `npm run build`
+### Setup Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd onebox-email-aggregator/backend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables in `.env` file:
+   ```
+   MONGO_URI=<your_mongodb_connection_string>
+   JWT_SECRET=<your_secret_key>
+   IMAP_HOST=<your_imap_host>
+   IMAP_USER=<your_email>
+   IMAP_PASS=<your_password>
+   ```
+4. Start the backend server:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Endpoints
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Authentication
 
-### `npm run eject`
+- **POST** `/api/auth/login` - Login and receive JWT token
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Email Management
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **GET** `/api/emails` - Fetch aggregated emails
+- **POST** `/api/emails/categorize` - Rule-based email categorization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Frontend Flow
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **User Authentication**: Users can log in to access their emails.
+2. **Dashboard**: Displays categorized emails fetched from the backend.
+3. **Email Categorization**: Users can view emails sorted into categories.
+4. **User Actions**: Users can search, filter, and manage emails.
+5. **Logout & Session Management**: Secure user sessions and logout functionality.
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JWT
+- **Email Handling**: IMAP protocol
+- **Middleware**: Used for route protection and error handling
+- **Frontend**: React.js (for UI and API integration)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribution
 
-### Code Splitting
+If you'd like to contribute, fork the repository and submit a pull request. Ensure all changes are tested properly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+For any queries or support, feel free to contact the development team!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
