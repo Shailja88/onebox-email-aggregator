@@ -1,4 +1,4 @@
-!!!!!Due to heavy load Render app crashed I have deployed twice but same error!!!!!
+!!!!!Due to heavy load Render app crashed I have deployed twice but same error as I am extracting all the mails refreshing of the website is done after every 10 seconds that's why free version of render is not supported  !!!!!
 
 
 
